@@ -1,0 +1,19 @@
+.top, .bottom {
+  width: 100%;
+}
+
+.wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.topleft, .topmiddle, .topright{
+  width: 33.33%;
+  float: left;
+  display: block;
+}
+
+#sugar_button, #choco_button, #lemon_button{
+  background-color: firebrick;
+
+}
