@@ -1,19 +1,72 @@
+body{
+  background-color: lightblue;
+}
+
+h1, h2{
+  text-align: center;
+}
+
 .top, .bottom {
   width: 100%;
 }
 
 .wrapper{
-  width: 1100px;
+  width: 1200px;
   margin: 0 auto;
 }
 
-.topleft, .topmiddle, .topright{
-  width: 33.33%;
+#topleft, #topmiddle, #topright{
+  width: 32.5%;
   float: left;
   display: block;
+  border: 1px black solid;
+  margin: 3px;
 }
 
 #sugar_button, #choco_button, #lemon_button{
-  background-color: firebrick;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190px;
+  line-height: 190px;
+  font-size: 26px;
 
+}
+
+#sugar_button{
+  background-image: url("sugarcookie.jpeg");
+  color: white;
+}
+
+#choco_button{
+  background-image: url("chococookie.jpeg");
+  color: white;
+}
+
+#lemon_button{
+  background-image: url("lemoncookie.jpeg");
+  color: black;
+}
+
+.bottomleft, .bottommiddle, .bottomright{
+  width: 32.5%;
+  float: left;
+  display: block;
+  margin: 25px 1px 1px 1px;
+  text-align: center;
+}
+
+#reset_button{
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: firebrick;
+  color: white;
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+#resetsection{
+  width: 100%;
 }

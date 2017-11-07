@@ -3,11 +3,11 @@
 function updateSugarMessage() {
 var sugarCookies = Cookies.get("sugarCookies");
   if (sugarCookies === "1") {
-    document.getElementById("howmanysugar").innerHTML = "you have ordered 1 sugar cookie";
+    document.getElementById("howmanysugar").innerHTML = "number of sugar cookies: 1";
   } else if (sugarCookies === undefined){
-    document.getElementById("howmanysugar").innerHTML = "you have not ordered any sugar cookies";
+    document.getElementById("howmanysugar").innerHTML = "number of sugar cookies: 0";
   } else {
-    document.getElementById("howmanysugar").innerHTML = "you have ordered " + sugarCookies + " sugar cookies";
+    document.getElementById("howmanysugar").innerHTML = "number of sugar cookies: " + sugarCookies;
   }
 }
 
@@ -15,11 +15,11 @@ var sugarCookies = Cookies.get("sugarCookies");
 function updateLemonMessage() {
 var lemonCookies = Cookies.get("lemonCookies");
   if (lemonCookies === "1") {
-    document.getElementById("howmanylemon").innerHTML = "you have ordered 1 lemon cookie";
+    document.getElementById("howmanylemon").innerHTML = "number of lemon cookies: 1";
   } else if (lemonCookies === undefined){
-    document.getElementById("howmanylemon").innerHTML = "you have not ordered any lemon cookies";
+    document.getElementById("howmanylemon").innerHTML = "number of lemon cookies: 0";
   } else {
-    document.getElementById("howmanylemon").innerHTML = "you have ordered " + lemonCookies + " lemon cookies";
+    document.getElementById("howmanylemon").innerHTML = "number of lemon cookies: " + lemonCookies;
   }
 }
 
@@ -27,11 +27,11 @@ var lemonCookies = Cookies.get("lemonCookies");
 function updateChocolateMessage() {
 var chocoCookies = Cookies.get("chocolateCookies");
   if (chocoCookies === "1") {
-    document.getElementById("howmanychoco").innerHTML = "you have ordered 1 chocolate cookie";
+    document.getElementById("howmanychoco").innerHTML = "number of chocolate cookies: 1";
   } else if (chocoCookies === undefined){
-    document.getElementById("howmanychoco").innerHTML = "you have not ordered any chocolate cookies";
+    document.getElementById("howmanychoco").innerHTML = "number of chocolate cookies: 0";
   } else {
-    document.getElementById("howmanychoco").innerHTML = "you have ordered " + chocoCookies + " chocolate cookies";
+    document.getElementById("howmanychoco").innerHTML = "number of chocolate cookies: " + chocoCookies;
   }
 }
 
@@ -65,7 +65,7 @@ function addAChocolateCookie() {
 
 function addALemonCookie() {
   var lemonCookies = Cookies.get("lemonCookies");
-  
+
   if (lemonCookies === undefined){
     lemonCookies = 1;
   } else {
@@ -91,11 +91,11 @@ function clearAllCookies() {
 }
 
 
-document.getElementById("sugar_button").addEventListener("click", addASugarCookie);
+document.getElementById("topleft").addEventListener("click", addASugarCookie);
 
-document.getElementById("choco_button").addEventListener("click", addAChocolateCookie);
+document.getElementById("topmiddle").addEventListener("click", addAChocolateCookie);
 
-document.getElementById("lemon_button").addEventListener("click", addALemonCookie);
+document.getElementById("topright").addEventListener("click", addALemonCookie);
 
 document.getElementById("reset_button").addEventListener("click", clearAllCookies);
 
